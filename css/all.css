@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrap {
+    width: 100%;
+    margin: auto;
+}
+.container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+.container .logo {
+    width: 140px;
+    height: 140px;
+    margin: auto 100px auto 0;
+    border: 4px solid #ffd266;
+    border-radius: 50%;
+}
+.container .logo h1 {
+    font-size: 70px;
+    line-height: 140px;
+    color: #ffd266;
+}
+.container .logo small {
+    font-size: 45px;
+}
+.container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffd266;
+}
+.container .body-height,
+.container .body-weight {
+    padding: 5px 15px;
+    border: 3px solid #ffd266;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
+}
+.container .send {
+    height: 100px;
+    width: 100px;
+    margin: auto 0 auto 100px;
+    background-color: #ffd266;
+    border-radius: 50%;
+    border: none;
+    font-size: 25px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content h2 {
+    margin: 20px;
+}
+.content .list {}
+.content .list li {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    transition: .2s;
+}
+.content .list li:hover {
+    background-color: #888;
+    color: #fff;
+}
+/* 體重過輕 */
+.content .list .li_blue:before {
+    content: '';
+    height: 100%;
+    width: 0;
+    border-left: 10px solid #26b0ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 體重正常 */
+.content .list .li_green:before {
+    content: '';
+    height: 100%;
+    width: 0;
+    border-left: 10px solid #83c53e;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 輕度過重 */
+.content .list .li_yellow:before {
+    content: '';
+    height: 100%;
+    width: 0;
+    border-left: 10px solid #ff9d2d;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 輕度肥胖 && 中度肥胖 */
+.content .list .li_orange:before {
+    content: '';
+    height: 100%;
+    width: 0;
+    border-left: 10px solid #ff7400;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 重度肥胖 */
+.content .list .li_red:before {
+    content: '';
+    height: 100%;
+    width: 0;
+    border-left: 10px solid #f00;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content .list__box {
+    display: inline-block;
+    margin: 0 20px;
+}
+.content .list__index {}
+.content .list__title {
+    font-size: 10px;
+    vertical-align: 5px;
+}
+.content .list__value {
+    font-size: 20px;
+}
+.content .list__today {
+    font-size: 13px;
+}
