@@ -99,7 +99,6 @@
     transition: .2s;
 }
 .content .list a {
-    display: black;
     text-decoration: none;
     color: #fff;
     background: #555;
