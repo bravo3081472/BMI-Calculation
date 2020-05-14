@@ -60,7 +60,7 @@ function updatedList(data) {
     var len = data.length
     for( i=0; i < len; i++ ){
         str += 
-        '<li class="'+ data[i].color +'"><div class="list__box"><span class="list__index">'+ data[i].index +'</span></div>       <div class="list__box"><span class="list__title">BMI</span> <span class="list__value">'+ data[i].content +'</span></div>       <div class="list__box"><span class="list__title">weight</span> <span class="list__value">'+ data[i].weight +'kg</span></div>      <div class="list__box"><span class="list__title">height</span> <span class="list__value">'+ data[i].height +'cm</span></div>         <div class="list__box"><span class="list__today">'+ data[i].today +'</span></div>     <a href="#" data-index='+ i +'>X</a>      </li>'
+        '<li class="'+ data[i].color +'"><div class="list__box"><span class="list__index">'+ data[i].index +'</span></div>       <div class="list__box"><span class="list__title">BMI</span> <span class="list__value">'+ data[i].content +'</span></div>       <div class="list__box"><span class="list__title">weight</span> <span class="list__value">'+ data[i].weight +'kg</span></div>      <div class="list__box"><span class="list__title">height</span> <span class="list__value">'+ data[i].height +'cm</span></div>         <div class="list__box"><span class="list__today">'+ data[i].today +'</span></div>     <a href="#" data-index='+ i +'>刪除</a>      </li>'
     }
     list.innerHTML = str
 }
